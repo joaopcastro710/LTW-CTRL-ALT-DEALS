@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/geomanist');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F4F5;
+    input{
+        background-color: #f2f2f2;
+    }
+}
+
+header {
+    background-color: lightblue;
+
+    a {
+        font-family: 'Work Sans', sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        font-family: 'Work Sans', sans-serif;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .dropdown-content {
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content li:hover {
+        background-color: #ddd;
+    }
+
+    #navigation a {
+        text-decoration: none;
+        color: black;
+    }
+    #navigation a:hover {
+        color: grey;
+    }
+    .dropdown-content li:last-child {
+        border-top: 1px solid #222222;
+    }
+    .fa {
+        margin-right: 5px;
+    }
+}
+
+
+footer {
+    background-color: lightgoldenrodyellow;
+}
+
+aside {
+    background-color: #F2F4F5;
+}
+
+
+
+.itemPage {
+
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.itemPage .itemImages {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.itemPage .itemImages .prev,
+.itemPage .itemImages .next {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.itemPage .itemImages .prev.disabled,
+.itemImages .next.disabled {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+
+.itemPage .itemImages .prev:hover,
+.itemPage .itemImages .next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+
+.itemPage .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.itemPage .itemSeller {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itemPage .itemSeller button {
+    background-color: #007bff;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.itemPage .itemSeller button:hover {
+    background-color: #0056b3;
+}
+
+
+.itemPage .extra {
+    margin-top: 20px;
+}
+
+.itemPage .extra > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.itemPage .extra li {
+    margin: 0;
+    padding: 5px;
+    font-size: 17px;
+    color: #555;
+}
+
+
+.itemPage article {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#login, #register, #profile, #create-item, #edit-item {
+    background-image: url("/assets/background.jpg");
+    > * {
+        font-family: "Work Sans", Arial, serif;
+    }
+}
+#login-form, #register-form, #edit-profile-form, #reset-password-form, #create-item-form, #edit-item-form{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+
+#login-form input, #register-form input, #edit-profile-form input,#reset-password-form input, #create-item-form input, #edit-item-form input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#login-button , #register-button, #edit-profile-button, #reset-password-button, #create-item-button, #edit-item-button, input[type=file]::file-selector-button, .checkout-button, #discount-code-button{
+    background-color: #007bff;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+#login a , #register a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+#login-button:hover, #register-button:hover, #edit-profile-button:hover, #reset-password-button:hover, #create-item-button:hover, #edit-item-button:hover, input[type=file]::file-selector-button:hover, .checkout-button:hover, #discount-code-button:hover{
+    background-color: #0056b3;
+}
+
+#login a:hover, #register a:hover{
+    text-decoration: underline;
+}
+
+
+
+#logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-page-button {
+    background-color: #0056b3;
+    color: #f2f2f2;
+}
+
+#profile #userProfilePic {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+
+#editProfilePictureButton i{
+    font-size: 20px;
+    rotate: 12deg;
+}
+.edit-profile-icon, .visibility-toggle-icon, #editProfilePictureButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.edit-profile-icon i , .visibility-toggle-icon i, #editProfilePictureButton i{
+    color: #666;
+}
+
+.edit-enabled .edit-profile-icon i {
+    color: blue;
+}
+
+.edit-profile-icon, #editProfilePictureButton{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.editing .edit-profile-icon {
+    opacity: 0.5;
+}
+#cancelPasswordResetButton, #goToPasswordResetButton{
+    background: none;
+    border: none;
+    color: #6c757d;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 0 0 0;
+    font-size: inherit;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+#cancelPasswordResetButton:hover, #goToPasswordResetButton:hover{
+    color: #222222;
+}
+
+
+
+#profile-tabs{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+#profile-tabs ul li a {
+    font-family: "Work Sans", Arial, serif;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+#profile-tabs ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+#profile-tabs ul li a.active {
+    border-color: #333;
+}
+
+aside.error-message, aside.success-message{
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    text-align: center;
+}
+aside.error-message{
+    background: #ff9999;
+    color: #cc0000;
+}
+aside.success-message {
+    background: #4fbd52;
+    color: #f2f2f2
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#logout-button, #delete-item-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logout-button:hover, #delete-item-button:hover {
+    background-color: #c82333;
+}
+
+#create-item select, #edit-item select, #profile select, #register select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+#profile select, #register select{
+    margin-bottom: 10px;
+}
+.input-wrapper {
+    position: relative;
+}
+
+
+
+.wishlist_items {
+
+    > * {
+        font-family: "Work Sans", Arial, serif;
+    }
+
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    div {
+        padding: 10px;
+        background-color: #f6f5f5;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        span {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        button {
+            border-radius: 10px;
+            margin: 5px;
+            padding: 8px;
+            border-color: transparent;
+            outline: none;
+            cursor: pointer;
+            background-color: #fd6464;
+        }
+
+        button:hover {
+            background-color: #fa3a3a;
+        }
+    }
+}
+
+
+
+
+.checkoutPage{
+    background-color: #fefefa;
+    color: #333;
+    font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif
+}
+#shipping-info {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#shipping-info h3 {
+    font-size: 1.25em;
+    color: #333;
+}
+#items-checkout h3 {
+    color: #444;
+    font-size: 1.2em;
+}
+.checkout-item {
+    background-color: #F2F4F5;
+}
+
+.checkout-item p {
+    color: #666;
+}
+#downloadPdf:hover {
+    background-color: #f2f2f2;
+    border: 2px solid #007BFF;
+    color: #2222;
+}
+
+input[type="submit"] {
+    background-color: #0056b3;
+    color: #f2f2f2;
+}
+
+input[type="submit"]:hover {
+    background-color: #28a745;
+}
+
+
+.AdminPage {
+    background-color: #fefefa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.AdminPage h1 {
+    color: #2a2a72;
+}
+
+
+.admin-functions form {
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-functions label {
+    color: #333;
+}
+
+.admin-functions input[type="text"], .admin-functions button {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.admin-functions input[type="text"] {
+    background-color: #fafafa;
+}
+
+.admin-functions button {
+    background-color: #4a67e8;
+    color: #f2f2f2;
+}
+
+.admin-functions button:hover {
+    background-color: #0069d9;
+    box-shadow: 0 0 8px rgba(0,105,200,0.5);
+}
+
+.admin-message {
+    border: 1px solid #ccc;
+    background-color: cadetblue;
+    color: #333;
+}
+
+
+
+.shoppingcartPage {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.shoppingcartPage {
+    .itemModel a, .itemBrand a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.shoppingcartPage h1 {
+    color: #333;
+}
+
+#cart-items {
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.item-details h2 {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.item-details p {
+    color: #666;
+}
+
+.shoppingcartPage button {
+    background-color: #d9534f;
+    color: #f2f2f2;
+}
+
+.shoppingcartPage button:hover {
+    background-color: #c9302c;
+}
+
+.shoppingcartPage form[action="/pages/shoppingcart.php"] button {
+    padding: 12px 24px;
+    background-color: #0069d9;
+    color: #f2f2f2;
+}
+
+.shoppingcartPage form[action="/pages/shoppingcart.php"] button:hover {
+    background-color: #0069d9;
+}
+
+
+
+
+.searchPage h1{
+    font-family: "Work Sans", Arial, serif;
+}
+.search-results{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.filter-bar label,
+.filter-bar select {
+    margin-right: 10px;
+}
+.filter-bar-main label {
+    font-weight: bold;
+    color: #50596c;
+    font-family: "Work Sans", Arial, serif;
+}
+
+
+.filter-bar select {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-bar select:hover,
+.filter-bar select:focus {
+    border-color: #999;
+}
+
+
+
+
+#seller-items > *, #items-bought > *, #items-sold > *{
+    font-family: "Work Sans", Arial, serif;
+}
+
+.selling-item-list th, .items-bought-table thead th {
+    background-color: #0056b3;
+    color: #f2f2f2;
+}
+
+
+.selling-item-list tr:nth-child(even), .items-bought-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.selling-item-list tr:hover, .items-bought-table tr:hover {
+    background-color: #f0f0f0;
+}
+.selling-item-list a, .items-bought-table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.selling-item-list a:hover, .items-bought-table a:hover {
+    color: blue;
+}
+
+.selling-item-list i,
+.selling-item-list .edit-button {
+    color: lightslategrey;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: font-size 0.4s ease-in-out;
+}
+
+.selling-item-list i:hover,
+.selling-item-list .edit-button:hover {
+    font-size: 28px;
+}
+
+
+
+body:has( > .messagePage) {
+    background-color: #e7e7e7;
+}
+
+.messagePage > .chats {
+    background-color: rgba(156, 214, 248, 0.8);
+}
+
+.messagePage > .chats > span {
+    color: black;
+}
+
+#mobileAside {
+    background-color: inherit;
+}
+
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.close {
+    cursor: pointer;
+}
+
+
+
+
+.items-sold-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.items-sold-table th {
+    background-color: #0056b3;
+    color: #f2f2f2;
+}
+
+
+
+.accept-delivery-button, .downloadPdf{
+    background-color: #0056b3;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.accept-delivery-button:hover, .downloadPdf:hover{
+    background-color: #007bff;
+}
+
+
+.rating-popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.rating-popup.active {
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+}
+
+.rating-popup .popup-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.rating-popup.active .popup-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rating-popup h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+.close-popup-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.close-popup-btn:hover {
+    font-size: 30px;
+}
+
+
+#rating-stars {
+    text-align: center;
+}
+
+#rating-stars .star {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#rating-stars .star.selected {
+    color: #ca9b1b;
+}
+
+#submit-ratings {
+    background-color: #4CAF50;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#submit-ratings:hover {
+    background-color: #45a049;
+}
+
+.itemPage {
+    background-color: inherit;
+}
+
+.paymentPage{
+    background-color: #f9f9f9;
+}
+
+#remove-discount-button {
+    background-color: #fd6464;
+}
+
+#remove-discount-button:hover {
+    background-color: #fa3a3a;
+}

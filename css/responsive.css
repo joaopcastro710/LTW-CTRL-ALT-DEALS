@@ -1,0 +1,313 @@
+@media (max-width: 1200px) {
+    body > header {
+        form {
+            input {
+                border-radius: 10px;
+                min-height: 30px;
+                padding: 4px;
+            }
+
+            .searchBarInput {
+                flex-grow: 1;
+                max-width: 50%;
+                cursor: text;
+            }
+        }
+
+        a {
+            font-size: small;
+        }
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .itemPage > article {
+        max-width: 62%;
+    }
+}
+
+@media (max-width: 1073px) {
+    body > main {
+        max-width: max-content;
+    }
+
+    .itemPage > article {
+        max-width: 58%;
+    }
+
+    .itemPage > aside {
+        padding: unset;
+    }
+}
+
+@media (max-width: 950px) {
+
+    body > header {
+
+        justify-content: space-between;
+
+        h1 {
+            font-size: large;
+            line-break: normal;
+            word-break: break-word;
+        }
+
+        > div:has(.fa-search) {
+            .fa-search {
+                display: block;
+            }
+        }
+
+        form {
+            display: none;
+        }
+
+
+    }
+
+    .mainPageItem {
+        display: grid;
+        max-width: 300px;
+        max-height: 400px;
+
+        h3 {
+            max-width: 190px;
+        }
+    }
+
+    .mainPageItem > #responsiveImage {
+        img {
+            max-width: 300px;
+            max-height: 400px;
+        }
+
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    body > .itemPage {
+        flex-direction: column;
+    }
+
+    body > .itemPage > article {
+        max-width: unset;
+    }
+
+    .itemPage > .itemPrice {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-auto-rows: auto auto;
+
+        h1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        h3 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .addToCartButton {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            max-width: unset;
+            min-width: unset;
+        }
+
+        .removeFromCart {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            max-width: unset;
+            min-width: unset;
+        }
+
+        .removeFromWishlist {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-bottom: 20px;
+            max-width: unset;
+            min-width: unset;
+        }
+
+        .addToWishlistButton {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-bottom: 20px;
+            max-width: unset;
+            min-width: unset;
+        }
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    body > .messagePage {
+        flex-direction: column-reverse;
+    }
+
+    body > .messagePage > .messagePage_aside {
+        background-color: rgba(64, 88, 103, 0.9);
+        position: fixed;
+        display: none;
+        align-items: center;
+        z-index: 999;
+        padding: 0 10px 0 10px;
+        margin: 0;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        max-width: 50vw;
+
+
+        min-height: 100vh;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            gap: 5px;
+
+            li {
+                align-self: center;
+                min-width: 80%;
+            }
+        }
+
+        > .messagePage_asideHeader {
+            background-color: transparent;
+        }
+
+    }
+
+    .chats {
+        margin-left: 16px;
+        height: initial;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .itemPage > .itemPrice {
+        display: initial;
+    }
+}
+
+@media (max-width: 420px) {
+    .mainPageItem {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        max-width: 250px;
+        max-height: 400px;
+    }
+
+    .mainPageItem {
+
+        h3 {
+            max-width: 100px;
+        }
+
+        #responsiveImage {
+            max-width: 250px;
+            max-height: 400px;
+            img {
+                max-width: 250px;
+                max-height: 400px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 340px) {
+    body {
+        > header {
+            padding: unset;
+            width: unset;
+        }
+    }
+}
+
+@media (max-width: 884px) {
+    main:has(.content) {
+
+        margin: unset;
+
+        .content:has(.filter-bar-main) {
+            flex-direction: column;
+
+            #item-container {
+                justify-content: center;
+            }
+
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #profile-data:has(#edit-profile-form) {
+        flex: 1;
+        #profile-data, #edit-profile-form, #reset-password-form, #create-item-form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            width: unset;
+        }
+    }
+
+    #create-item:has(#create-item-form) {
+        #edit-profile-form, #reset-password-form, #create-item-form {
+            display: flex;
+            flex-direction: column;
+            width: unset;
+            height: min-content;
+        }
+    }
+
+    #edit-item:has(#edit-item-form) {
+        #login-form, #register-form, #edit-profile-form, #reset-password-form, #create-item-form, #edit-item-form {
+            display: flex;
+            flex-direction: column;
+            width: unset;
+            height: min-content;
+        }
+    }
+
+    body > #profile-tabs {
+        display: none;
+    }
+
+    .AdminPage {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .admin-functions form {
+        padding: 15px;
+    }
+
+    .admin-functions button {
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+}

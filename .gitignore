@@ -1,0 +1,10 @@
+# macOS
+
+.DS_Store
+
+# idea
+
+.idea
+assets/users/2.jpg
+**/php_errors.log
+database/database.db
