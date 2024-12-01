@@ -1,0 +1,2 @@
+# LTW-CTRL-ALT-DEALS
+Projeto da UC LTW @ FEUP
